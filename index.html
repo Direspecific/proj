@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="card diagnostics">
+      <h2>Machine Diagnostics</h2>
+      <div class="progress-circle">
+        <span id="diagnostics-percentage">22%</span>
+      </div>
+      <button id="diagnostics-check">Diagnostics Check</button>
+      <div class="status">
+        <div class="healthy">● <span>Healthy</span></div>
+        <div class="attention">● <span>Needs Attention</span></div>
+        <div class="critical">● <span>Critical</span></div>
+      </div>
+    </div>
+
+    <div class="card troubleshoot">
+      <h2>Troubleshoot</h2>
+      <p id="system-status">System is up and running.</p>
+      <ul>
+        <li class="check">✔ Documenting Findings</li>
+        <li class="check">✔ System Debugging</li>
+        <li class="warning">⚠ Testing Solutions</li>
+        <li class="check">✔ Analyzing Data</li>
+        <li class="check">✔ Identifying Issues</li>
+      </ul>
+    </div>
+
+    <div class="card scheduling">
+      <h2>Production Scheduling</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Task</th>
+            <th>Progress</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>Assembly Line Sequencing</td>
+            <td>
+              <div class="progress-bar">
+                <span style="width: 75%;"></span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>Capacity Planning</td>
+            <td>
+              <div class="progress-bar">
+                <span style="width: 50%; background-color: #facc15;"></span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
